@@ -25,9 +25,14 @@ A classe Controller é a espinha dorsal do sistema, coordenando as diferentes fu
 
 Execução do Programa
 O método main é o ponto de entrada do programa, carregando os tipos de despesa e usuários, exibindo a tela de login e, posteriormente, o menu principal do sistema. Isso garante que o fluxo de execução comece de forma organizada e coerente.
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe CategoriaDespesa
 A classe abstrata CategoriaDespesa serve como uma estrutura base para a categorização de despesas no sistema de controle de despesas. Ela encapsula funcionalidades comuns relacionadas a categorias e fornece uma base para a implementação de categorias específicas.
 
@@ -49,12 +54,14 @@ Este é um método estático que cria uma nova instância de CategoriaDespesa co
 
 Fluxo de Uso
 A classe CategoriaDespesa estabelece uma estrutura padrão para categorias de despesas, permitindo a extensão para categorias específicas, como CategoriaTransporte, CategoriaEventual, CategoriaSuperfluo e CategoriaDespesaCustomizada. Ela oferece métodos para gerenciar despesas associadas e calcular totais, bem como para criar categorias com base em nomes.
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe CategoriaDespesaCustomizada
 A classe CategoriaDespesaCustomizada é uma implementação concreta da classe abstrata CategoriaDespesa. Ela permite a criação de categorias personalizadas para despesas, além das categorias predefinidas como "Transporte", "Eventual" e "Supérfluo".
 
@@ -68,12 +75,14 @@ Este método sobrescrito fornece uma descrição da categoria customizada. Ele r
 
 Fluxo de Uso
 A classe CategoriaDespesaCustomizada é usada para criar categorias personalizadas que não correspondem às categorias predefinidas. Ao instanciar essa classe, você pode criar uma nova categoria de despesa com um nome específico. A descrição da categoria é fornecida através do método getDescricaoCategoria().
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe CategoriaEventual
 A classe CategoriaEventual é uma implementação concreta da classe abstrata CategoriaDespesa. Ela representa a categoria de despesas eventuais, que engloba gastos não recorrentes.
 
@@ -87,12 +96,14 @@ Este método sobrescrito fornece uma descrição da categoria de despesas eventu
 
 Fluxo de Uso
 A classe CategoriaEventual é usada para representar a categoria de despesas eventuais, que engloba gastos não recorrentes e não previsíveis. A descrição da categoria é fornecida pelo método getDescricaoCategoria(), que pode ser utilizado para documentar e explicar a finalidade dessa categoria no sistema.
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe CategoriaSuperfluo
 A classe CategoriaSuperfluo é uma implementação concreta da classe abstrata CategoriaDespesa. Ela representa a categoria de despesas supérfluas, que engloba gastos não essenciais.
 
@@ -106,9 +117,14 @@ Este método sobrescrito fornece uma descrição da categoria de despesas supér
 
 Fluxo de Uso
 A classe CategoriaSuperfluo é usada para representar a categoria de despesas supérfluas, que abrange gastos não essenciais e dispensáveis. A descrição da categoria é fornecida pelo método getDescricaoCategoria(), que pode ser utilizado para documentar e explicar a finalidade dessa categoria no sistema.
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe CategoriaTransporte
 A classe CategoriaTransporte é uma implementação concreta da classe abstrata CategoriaDespesa. Ela representa a categoria de despesas relacionadas a transporte, englobando gastos ligados a deslocamentos e locomoção.
 
@@ -122,13 +138,14 @@ Este método sobrescrito fornece uma descrição da categoria de despesas de tra
 
 Fluxo de Uso
 A classe CategoriaTransporte é usada para representar a categoria de despesas de transporte, que abrange gastos relacionados a deslocamentos e locomoção. A descrição da categoria é fornecida pelo método getDescricaoCategoria(), que pode ser utilizado para documentar e explicar a finalidade dessa categoria no sistema.
-
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe Despesa
 A classe Despesa é uma das principais classes do sistema de controle de despesas. Ela representa uma despesa específica, contendo informações como descrição, valor, data de vencimento, categoria, tipo de despesa, categoria de despesa, valor restante (caso seja parcelada) e pagamentos associados.
 
@@ -169,12 +186,14 @@ A classe Despesa possui métodos estáticos para listar despesas pagas e em aber
 
 Métodos de Manipulação de Arquivos
 A classe inclui métodos estáticos para salvar e carregar despesas a partir de arquivos. O método salvarDespesasEmArquivo() escreve uma lista de despesas em um arquivo, enquanto o método carregarDespesasDeArquivo() lê uma lista de despesas de um arquivo.
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe ListarDespesasController
 A classe ListarDespesasController é responsável por gerenciar a listagem, edição e exclusão de despesas no sistema de controle de despesas.
 
@@ -190,12 +209,14 @@ Este método é chamado quando o usuário escolhe excluir uma despesa. Ele exibe
 
 getListaDeDespesas()
 Este método retorna a lista de despesas do controlador principal. 
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe MenuDespesas
 A classe MenuDespesas é responsável por exibir um menu de opções relacionadas às despesas, permitindo a listagem, edição, exclusão e gerenciamento de tipos de despesa.
 
@@ -226,13 +247,14 @@ Este método ainda não está implementado, mas seria responsável por permitir 
 
 excluirTipoDespesa()
 Este método ainda não está implementado, mas seria responsável por permitir a exclusão de um tipo de despesa existente. 
-
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe Pagamento
 A classe Pagamento representa um pagamento realizado, contendo informações sobre a data e o valor do pagamento. É utilizada para registrar pagamentos relacionados a despesas ou transações específicas.
 
@@ -250,10 +272,14 @@ setDataPagamento(String dataPagamento): Atualiza a data do pagamento.
 getValorPagamento(): Retorna o valor do pagamento.
 setValorPagamento(double valorPagamento): Atualiza o valor do pagamento.
 A classe Pagamento desempenha um papel fundamental no sistema de controle de despesas, permitindo o registro e o rastreamento dos pagamentos feitos em relação a diferentes despesas ou transações.
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe PagamentoManager
 A classe PagamentoManager é responsável por gerenciar as operações relacionadas a pagamentos no sistema de controle de despesas. Ela permite registrar pagamentos para despesas e realizar ações associadas a eles.
 
@@ -266,11 +292,14 @@ selecionarPagavelParaPagamento(List<Despesa> listaDeDespesas): Esse método perm
 selecionarTipoDespesa(GerenciadorTiposDespesa gerenciadorTiposDespesa): Esse método é usado para selecionar um tipo de despesa existente ou criar um novo tipo de despesa. Ele exibe uma caixa de diálogo com as opções e retorna o tipo de despesa selecionado ou criado.
 
 A classe PagamentoManager desempenha um papel fundamental na interação do usuário com o sistema, permitindo o registro de pagamentos e a seleção de tipos de despesa, contribuindo para a funcionalidade geral de gerenciamento de despesas. 
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Interface Pagavel
 A interface Pagavel define um conjunto de métodos que as classes devem implementar para representar itens que podem ser pagos, como despesas. Ela permite que diferentes tipos de itens possam ser tratados de maneira uniforme no contexto do sistema de controle de despesas.
 
@@ -287,12 +316,14 @@ estaPaga(): Verifica se o item foi pago ou não.
 marcarComoPaga(): Marca o item como pago.
 
 A interface Pagavel é fundamental para garantir que diferentes tipos de objetos que podem ser pagos se comportem de maneira consistente no sistema. Classes como Despesa podem implementar essa interface para que os métodos relacionados a pagamentos possam ser aplicados a elas de forma padronizada. 
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe TipoDespesa
 A classe TipoDespesa representa os diferentes tipos de despesa que podem ser associados às despesas cadastradas no sistema de controle de despesas.
 
@@ -306,13 +337,14 @@ Construtores: A classe possui dois construtores, um que aceita o nome como parâ
 getNome(): Retorna o nome do tipo de despesa.
 
 setNome(String nome): Define o nome do tipo de despesa.
-
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe GerenciadorTiposDespesa
 A classe GerenciadorTiposDespesa é responsável por gerenciar os diferentes tipos de despesa no sistema, incluindo a criação, listagem e exclusão dos tipos de despesa.
 
@@ -327,19 +359,26 @@ excluirTipoDespesa(): Permite excluir um tipo de despesa existente, buscando pel
 salvarTiposDespesaEmArquivo(): Salva os tipos de despesa em um arquivo de texto chamado "tiposdespesa.txt".
 
 carregarTiposDespesaDeArquivo(): Carrega os tipos de despesa a partir do arquivo "tiposdespesa.txt".
-
-
-
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe Util
 A classe Util fornece métodos utilitários para a leitura de linhas de um arquivo. O método lerLinhasArquivo(File arquivo) lê as linhas do arquivo passado como parâmetro e retorna uma lista de strings contendo as linhas lidas.
 
 Essas classes são essenciais para o gerenciamento dos tipos de despesa, permitindo a criação, listagem e exclusão desses tipos, além de salvar e carregar as informações dos tipos de despesa de/arquivo. 
-
-
-
+*
+*
+*
+*
+*
+*
+*
+*
 Classe GerenciadorUsuarios
 A classe GerenciadorUsuarios é responsável por gerenciar os usuários do sistema de controle de despesas, incluindo operações como cadastro, edição, exclusão, listagem e autenticação.
 
